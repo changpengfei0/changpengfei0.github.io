@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>cpF＆博客</title>
+  
+  <subtitle>记录生活</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2019-12-25T12:07:24.874Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>常鹏飞</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="http://yoursite.com/2019/12/26/%E6%97%A5%E5%B8%B8%E7%AC%94%E8%AE%B0/"/>
+    <id>http://yoursite.com/2019/12/26/%E6%97%A5%E5%B8%B8%E7%AC%94%E8%AE%B0/</id>
+    <published>2019-12-26T10:16:17.492Z</published>
+    <updated>2019-12-25T12:07:24.874Z</updated>
+    
+    <content type="html"><![CDATA[<p>Nginx</p><p>作用：html 服务器</p><p>反向代理：隐藏被访问者</p><p>正向代理：隐藏访问者</p><p>nohup 命令运行由 Command参数和任何相关的 Arg参数指定的命令，忽略所有挂断（SIGHUP）信号。在注销后使用 nohup 命令运行后台中的程序。要运行后台中的 nohup 命令，添加 &amp; （ 表示“and”的符号）到命令的尾部。<br>nohup 是 no hang up 的缩写，就是不挂断的意思。</p><p>不挂断地运行命令</p><p>nohup python app.py &gt;&gt; /etc/supervisor/app.log 2&gt;&amp;1 &amp;</p><p>凡是访问静态 页面 ，交给nginx</p><p>访问动态请求，交给gunicorn   例如：/api/students/</p><p>nginx 配置   server。。。        localtion 。。。</p><p>mysql 连接远程如果失败</p><p>在装有MySQL的机器上登录MySQL mysql -u root -p密码<br>执行use mysql;<br>执行update user set host = ‘%’ where user = ‘root’;这一句执行完可能会报错，不用管它。<br>执行FLUSH PRIVILEGES;</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Nginx&lt;/p&gt;
+&lt;p&gt;作用：html 服务器&lt;/p&gt;
+&lt;p&gt;反向代理：隐藏被访问者&lt;/p&gt;
+&lt;p&gt;正向代理：隐藏访问者&lt;/p&gt;
+&lt;p&gt;nohup 命令运行由 Command参数和任何相关的 Arg参数指定的命令，忽略所有挂断（SIGHUP）信号。在注销后使用 nohup
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+</feed>
