@@ -6,18 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives | cpF＆博客</title>
+  <title>Centos添加删除用户组 | cpF＆博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="生命不止，奋斗不息">
-<meta property="og:type" content="website">
-<meta property="og:title" content="cpF＆博客">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+  <meta name="description" content="1.新建用户  1adduser testuser ``//``新建testuser 用户 ``passwd` `testuser ``//``给testuser 用户设置密码  2.建工作组  1groupadd testgroup ``//``新建``test``工作组  3.新建用户同时增加工作组  1useradd` `-g testgroup testuser ``//``新建testu">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Centos添加删除用户组">
+<meta property="og:url" content="http://yoursite.com/2018/03/12/Centos7添加删除用户组/index.html">
 <meta property="og:site_name" content="cpF＆博客">
-<meta property="og:description" content="生命不止，奋斗不息">
+<meta property="og:description" content="1.新建用户  1adduser testuser ``//``新建testuser 用户 ``passwd` `testuser ``//``给testuser 用户设置密码  2.建工作组  1groupadd testgroup ``//``新建``test``工作组  3.新建用户同时增加工作组  1useradd` `-g testgroup testuser ``//``新建testu">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-12-31T07:46:10.123Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="cpF＆博客">
-<meta name="twitter:description" content="生命不止，奋斗不息">
+<meta name="twitter:title" content="Centos添加删除用户组">
+<meta name="twitter:description" content="1.新建用户  1adduser testuser ``//``新建testuser 用户 ``passwd` `testuser ``//``给testuser 用户设置密码  2.建工作组  1groupadd testgroup ``//``新建``test``工作组  3.新建用户同时增加工作组  1useradd` `-g testgroup testuser ``//``新建testu">
   
     <link rel="alternative" href="/atom.xml" title="cpF＆博客" type="application/atom+xml">
   
@@ -161,75 +162,84 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-Centos7添加删除用户组" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/03/21/日常笔记/" class="archive-article-date">
-  	<time datetime="2018-03-20T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-21</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/03/21/日常笔记/">Nginx</a>
+    <h1 class="article-title" itemprop="name">
+      Centos添加删除用户组
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/nginx//" class="article-tag-list-link color1">nginx</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/03/12/Centos7添加删除用户组/" class="archive-article-date">
+        
+        <a href="/2018/03/12/Centos7添加删除用户组/" class="archive-article-date">
   	<time datetime="2018-03-12T04:40:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-12</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/03/12/Centos7添加删除用户组/">Centos添加删除用户组</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><strong>1.新建用户</strong> </p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">adduser testuser ``//``新建testuser 用户 ``passwd` `testuser ``//``给testuser 用户设置密码</span><br></pre></td></tr></table></figure>
 
-        <div class="article-info info-on-right">
-          
-          
+<p><strong>2.建工作组</strong> </p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">groupadd testgroup ``//``新建``test``工作组</span><br></pre></td></tr></table></figure>
+
+<p><strong>3.新建用户同时增加工作组</strong> </p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">useradd` `-g testgroup testuser ``//``新建testuser用户并增加到testgroup工作组</span><br></pre></td></tr></table></figure>
+
+<p>//注：：-g 所属组 -d 家目录 -s 所用的SHELL</p>
+<p><strong>4.给已有的用户增加工作组</strong></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">usermod` `-G groupname username</span><br></pre></td></tr></table></figure>
+
+<p><strong>5.临时关闭</strong> 在/etc/shadow文件中属于该用户的行的第二个字段（密码）前面加上<em>就可以了。想恢复该用户，去掉</em>即可 </p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">或者使用如下命令关闭用户账号： ``passwd` `testuser –l ``//``重新释放： ``passwd` `testuser –u</span><br></pre></td></tr></table></figure>
+
+<p><strong>6.永久性删除用户账号</strong></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">usermod` `–r testuser ``//``（强制删除该用户的主目录和主目录下的所有文件和子目录）</span><br></pre></td></tr></table></figure>
+
+<p><strong>7.显示用户信息</strong></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">id` `user ``cat` `/etc/passwd` `| ``grep` `user</span><br></pre></td></tr></table></figure>
+
+<p><strong>补充:查看用户和用户组的方法</strong> </p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">用户列表文件：``/etc/passwd` `用户组列表文件：``/etc/group` `查看系统中有哪些用户：``cut` `-d : -f 1 ``/etc/passwd` `查看可以登录系统的用户：``cat` `/etc/passwd` `| ``grep` `-``v` `/sbin/nologin` `| ``cut` `-d : -f 1 ``查看用户操作：w命令(需要root权限) ``查看某一用户：w 用户名 ``查看登录用户：``who` ` 查看用户登录历史记录：last</span><br></pre></td></tr></table></figure>
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/source/img/wechatimg.jpg">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
@@ -242,66 +252,113 @@
 	</div>
 
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/03/12/Centos7添加删除用户组/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/03/07/centos7新建用户并授权/" class="archive-article-date">
-  	<time datetime="2018-03-07T04:40:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-07</time>
-</a>
+<nav id="article-nav">
+  
+    <a href="/2018/03/21/日常笔记/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          Nginx
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2018/03/07/centos7新建用户并授权/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Centos7新建用户并授权</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/03/07/centos7新建用户并授权/">Centos7新建用户并授权</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">博客</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/Linux//" class="article-tag-list-link color1">Linux</a>
-        		</li>
-      		
-		</ul>
-	</div>
+        
+        
+    </div>
+</aside>
 
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+
   
   
-    </div></section>
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -324,8 +381,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,

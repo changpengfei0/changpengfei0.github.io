@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-12-25T12:07:24.874Z</updated>
+  <updated>2019-12-31T07:48:16.014Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,28 +17,83 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title></title>
-    <link href="http://yoursite.com/2019/12/26/%E6%97%A5%E5%B8%B8%E7%AC%94%E8%AE%B0/"/>
-    <id>http://yoursite.com/2019/12/26/%E6%97%A5%E5%B8%B8%E7%AC%94%E8%AE%B0/</id>
-    <published>2019-12-26T10:16:17.492Z</published>
-    <updated>2019-12-25T12:07:24.874Z</updated>
+    <title>Nginx</title>
+    <link href="http://yoursite.com/2018/03/21/%E6%97%A5%E5%B8%B8%E7%AC%94%E8%AE%B0/"/>
+    <id>http://yoursite.com/2018/03/21/%E6%97%A5%E5%B8%B8%E7%AC%94%E8%AE%B0/</id>
+    <published>2018-03-20T16:00:00.000Z</published>
+    <updated>2019-12-31T07:48:16.014Z</updated>
     
-    <content type="html"><![CDATA[<p>Nginx</p><p>作用：html 服务器</p><p>反向代理：隐藏被访问者</p><p>正向代理：隐藏访问者</p><p>nohup 命令运行由 Command参数和任何相关的 Arg参数指定的命令，忽略所有挂断（SIGHUP）信号。在注销后使用 nohup 命令运行后台中的程序。要运行后台中的 nohup 命令，添加 &amp; （ 表示“and”的符号）到命令的尾部。<br>nohup 是 no hang up 的缩写，就是不挂断的意思。</p><p>不挂断地运行命令</p><p>nohup python app.py &gt;&gt; /etc/supervisor/app.log 2&gt;&amp;1 &amp;</p><p>凡是访问静态 页面 ，交给nginx</p><p>访问动态请求，交给gunicorn   例如：/api/students/</p><p>nginx 配置   server。。。        localtion 。。。</p><p>mysql 连接远程如果失败</p><p>在装有MySQL的机器上登录MySQL mysql -u root -p密码<br>执行use mysql;<br>执行update user set host = ‘%’ where user = ‘root’;这一句执行完可能会报错，不用管它。<br>执行FLUSH PRIVILEGES;</p>]]></content>
+    <content type="html"><![CDATA[<p>作用：html 服务器</p><p>反向代理：隐藏被访问者</p><p>正向代理：隐藏访问者</p><p>nohup 命令运行由 Command参数和任何相关的 Arg参数指定的命令，忽略所有挂断（SIGHUP）信号。在注销后使用 nohup 命令运行后台中的程序。要运行后台中的 nohup 命令，添加 &amp; （ 表示“and”的符号）到命令的尾部。<br>nohup 是 no hang up 的缩写，就是不挂断的意思。</p><p>不挂断地运行命令</p><p>nohup python app.py &gt;&gt; /etc/supervisor/app.log 2&gt;&amp;1 &amp;</p><p>凡是访问静态 页面 ，交给nginx</p><p>访问动态请求，交给gunicorn   例如：/api/students/</p><p>nginx 配置   server。。。        localtion 。。。</p><p>mysql 连接远程如果失败</p><p>在装有MySQL的机器上登录MySQL mysql -u root -p密码<br>执行use mysql;<br>执行update user set host = ‘%’ where user = ‘root’;这一句执行完可能会报错，不用管它。<br>执行FLUSH PRIVILEGES;</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;Nginx&lt;/p&gt;
-&lt;p&gt;作用：html 服务器&lt;/p&gt;
+        &lt;p&gt;作用：html 服务器&lt;/p&gt;
 &lt;p&gt;反向代理：隐藏被访问者&lt;/p&gt;
 &lt;p&gt;正向代理：隐藏访问者&lt;/p&gt;
-&lt;p&gt;nohup 命令运行由 Command参数和任何相关的 Arg参数指定的命令，忽略所有挂断（SIGHUP）信号。在注销后使用 nohup
+&lt;p&gt;nohup 命令运行由 Command参数和任何相关的 Arg参数指定的命令，忽略所有挂断（SIGHUP）信号。在注销后使用 nohup 命令运行后台中的程序。要
       
     
     </summary>
     
     
+      <category term="nginx" scheme="http://yoursite.com/categories/nginx/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Centos添加删除用户组</title>
+    <link href="http://yoursite.com/2018/03/12/Centos7%E6%B7%BB%E5%8A%A0%E5%88%A0%E9%99%A4%E7%94%A8%E6%88%B7%E7%BB%84/"/>
+    <id>http://yoursite.com/2018/03/12/Centos7%E6%B7%BB%E5%8A%A0%E5%88%A0%E9%99%A4%E7%94%A8%E6%88%B7%E7%BB%84/</id>
+    <published>2018-03-12T04:40:24.000Z</published>
+    <updated>2019-12-31T07:46:10.123Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>1.新建用户</strong> </p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">adduser testuser ``//``新建testuser 用户 ``passwd` `testuser ``//``给testuser 用户设置密码</span><br></pre></td></tr></table></figure><p><strong>2.建工作组</strong> </p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">groupadd testgroup ``//``新建``test``工作组</span><br></pre></td></tr></table></figure><p><strong>3.新建用户同时增加工作组</strong> </p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">useradd` `-g testgroup testuser ``//``新建testuser用户并增加到testgroup工作组</span><br></pre></td></tr></table></figure><p>//注：：-g 所属组 -d 家目录 -s 所用的SHELL</p><p><strong>4.给已有的用户增加工作组</strong></p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">usermod` `-G groupname username</span><br></pre></td></tr></table></figure><p><strong>5.临时关闭</strong> 在/etc/shadow文件中属于该用户的行的第二个字段（密码）前面加上<em>就可以了。想恢复该用户，去掉</em>即可 </p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">或者使用如下命令关闭用户账号： ``passwd` `testuser –l ``//``重新释放： ``passwd` `testuser –u</span><br></pre></td></tr></table></figure><p><strong>6.永久性删除用户账号</strong></p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">usermod` `–r testuser ``//``（强制删除该用户的主目录和主目录下的所有文件和子目录）</span><br></pre></td></tr></table></figure><p><strong>7.显示用户信息</strong></p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">id` `user ``cat` `/etc/passwd` `| ``grep` `user</span><br></pre></td></tr></table></figure><p><strong>补充:查看用户和用户组的方法</strong> </p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">用户列表文件：``/etc/passwd` `用户组列表文件：``/etc/group` `查看系统中有哪些用户：``cut` `-d : -f 1 ``/etc/passwd` `查看可以登录系统的用户：``cat` `/etc/passwd` `| ``grep` `-``v` `/sbin/nologin` `| ``cut` `-d : -f 1 ``查看用户操作：w命令(需要root权限) ``查看某一用户：w 用户名 ``查看登录用户：``who` ` 查看用户登录历史记录：last</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;strong&gt;1.新建用户&lt;/strong&gt; &lt;/p&gt;
+&lt;figure class=&quot;highlight shell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td
+      
+    
+    </summary>
+    
+    
+      <category term="Linux" scheme="http://yoursite.com/categories/Linux/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Centos7新建用户并授权</title>
+    <link href="http://yoursite.com/2018/03/07/centos7%E6%96%B0%E5%BB%BA%E7%94%A8%E6%88%B7%E5%B9%B6%E6%8E%88%E6%9D%83/"/>
+    <id>http://yoursite.com/2018/03/07/centos7%E6%96%B0%E5%BB%BA%E7%94%A8%E6%88%B7%E5%B9%B6%E6%8E%88%E6%9D%83/</id>
+    <published>2018-03-07T04:40:24.000Z</published>
+    <updated>2019-12-31T07:38:47.335Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>1、创建一个新用户：prefma</strong></p><p> [root@localhost ~]# adduser prefma </p><p><strong>2、为新用户创建初始化密码</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost~]# passwd prefma</span><br><span class="line">Changing password for user prefma.</span><br><span class="line">New password:             # 输入密码</span><br><span class="line">Retype new password:      # 再次输入密码</span><br><span class="line">passwd: all authentication tokens updated successfully.</span><br></pre></td></tr></table></figure><p><strong>二、授权</strong></p><p>个人用户的权限只可以在本home下有完整权限，其他目录需要别人授权。经常需要root用户的权限，可以通过修改sudoers文件来赋予权限。</p><p>新创建的用户并不能使用sudo命令，需要给他添加授权。</p><p><strong>1、查找sudoers文件路径并赋予权限</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">1 [root@localhost~]# whereis sudoers                     # 查找sudoers文件路径</span><br><span class="line">2 sudoers: /etc/sudoers /etc/sudoers.d /usr/share/man/man5/sudoers.5.gz</span><br><span class="line">3 [root@localhost~]# ls -l /etc/sudoers                  # 查看权限</span><br><span class="line">4 -r--r----- 1 root root 3938 Sep  6  2017 /etc/sudoers  # 只有读权限</span><br><span class="line">5 [root@localhost~]# chmod -v u+w /etc/sudoers           # 赋予读写权限</span><br><span class="line">6 mode of ‘/etc/sudoers’ changed from 0440 (r--r-----) to 0640 (rw-r-----)</span><br></pre></td></tr></table></figure><p><strong>2、修改sudoers文件</strong></p><p>输入命令 vim /etc/sudoers 修改sudoers文件，添加新用户信息：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"><span class="comment"># Allow root to run any commands anywhere</span></span></span><br><span class="line">root ALL=(ALL) ALL</span><br><span class="line">prefma ALL=(ALL) ALL #这个是新用户</span><br></pre></td></tr></table></figure><p>然后输入命令 wq! 保存修改。</p><p><strong>3、收回权限</strong></p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost~]# chmod -v u-w /etc/sudoers</span><br><span class="line">mode of ‘/etc/sudoers’ changed from 0640 (rw-r-----) to 0440 (r--r-----)</span><br></pre></td></tr></table></figure><p><strong>4、新用户登录</strong></p><p>新建连接，使用新创建的用户登录，并进行验证，比如：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">[prefma@localhost~]$ pwd</span><br><span class="line">/home/prefma</span><br><span class="line">[prefma@localhost~]$ ls -l /etc/sudoers</span><br><span class="line">-r--r----- 1 root root 3995 Oct 16 22:42 /etc/sudoers</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;strong&gt;1、创建一个新用户：prefma&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt; [root@localhost ~]# adduser prefma &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2、为新用户创建初始化密码&lt;/strong&gt;&lt;/p&gt;
+&lt;figure class=&quot;hi
+      
+    
+    </summary>
+    
+    
+      <category term="Linux" scheme="http://yoursite.com/categories/Linux/"/>
+    
+    
+      <category term="博客" scheme="http://yoursite.com/tags/%E5%8D%9A%E5%AE%A2/"/>
     
   </entry>
   
